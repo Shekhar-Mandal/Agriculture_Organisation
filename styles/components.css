@@ -1,0 +1,42 @@
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #2ecc71;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.hero-section {
+    min-height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&w=1920');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-card {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon {
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
